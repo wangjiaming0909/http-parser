@@ -2342,8 +2342,7 @@ http_parser_url_init(struct http_parser_url *u) {
   memset(u, 0, sizeof(*u));
 }
 
-int
-http_parser_parse_url(const char *buf, size_t buflen, int is_connect,
+int http_parser_parse_url(const char *buf, size_t buflen, int is_connect,
                       struct http_parser_url *u)
 {
   enum state s;
